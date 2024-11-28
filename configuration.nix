@@ -5,7 +5,7 @@
   ];
 
   fonts.packages = [
-    (pkgs.nerdfonts.override { fonts = ["Iosevka"]; })
+    pkgs.nerd-fonts.iosevka
   ];
 
   homebrew = {
