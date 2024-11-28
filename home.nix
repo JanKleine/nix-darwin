@@ -2,7 +2,7 @@
 
 {
   home.username = "jankleine";
-  home.homeDirectory = "/Users/jankleine";
+  home.homeDirectory = /Users/jankleine;
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
