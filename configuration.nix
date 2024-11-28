@@ -44,6 +44,13 @@
     };
   };
 
+  #users.users = {
+  #  jankleine = {
+  #    description = "Jan Kleine";
+  #    home = /Users/jankleine;
+  #  };
+  #};
+
   # The platform the configuration will be used on.
   nixpkgs.hostPlatform = "aarch64-darwin";
 }

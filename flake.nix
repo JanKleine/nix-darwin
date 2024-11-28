@@ -9,36 +9,38 @@
 
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
 
-    #home-manager.url = "github:nix-community/home-manager";
-    #home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ nixpkgs, darwin, nix-homebrew }:
-  let
-    home-configuration = { pkgs, ... }: {
-
-    };
-  in
-  {
+  outputs = inputs@{ self, nixpkgs, darwin, nix-homebrew, home-manager }: {
     # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#simple
-    darwinConfigurations."Jans-MacBook" = nix-darwin.lib.darwinSystem {
-      modules = [
-        ./configuration.nix
-	nix-homebrew.darwinModules.nix-homebrew
-        {
-          nix-homebrew = {
-            # Install Homebrew under the default prefix
-            enable = true;
+    # $ darwin-rebuild build --flake .
+    darwinConfigurations = {
+      "Jans-MacBook" = darwin.lib.darwinSystem {
+        modules = [
+          ./configuration.nix
+          nix-homebrew.darwinModules.nix-homebrew
+          {
+            nix-homebrew = {
+              enable = true;
+              enableRosetta = true;
 
-            # Apple Silicon Only: Also install Homebrew under the default Intel prefix for Rosetta 2
-            enableRosetta = true;
+              # User owning the Homebrew prefix
+              user = "jankleine";
+            };
+          }
+	  home-manager.darwinModules.home-manager
+	  {
+	    home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
 
-            # User owning the Homebrew prefix
-            user = "jankleine";
-          };
-        }
-      ];
+            home-manager.users = {
+              jankleine = import ./home.nix;
+            };
+          }
+        ];
+      };
     };
 
     # Expose the package set, including overlays, for convenience:
