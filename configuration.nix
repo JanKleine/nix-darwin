@@ -11,15 +11,16 @@
   homebrew = {
     enable = true;
     casks = [
+      "1password"
       "firefox"
       "iina"
       "iterm2"
-      "1password"
       "jetbrains-toolbox"
       "nextcloud"
       "proton-mail"
       "protonvpn"
       "plex"
+      "signal"
     ];
   };
 

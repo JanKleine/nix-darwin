@@ -8,12 +8,9 @@
     darwin.inputs.nixpkgs.follows = "nixpkgs";
 
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
-
-    home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ self, nixpkgs, darwin, nix-homebrew, home-manager }: {
+  outputs = inputs@{ self, nixpkgs, darwin, nix-homebrew }: {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .
     darwinConfigurations = {
@@ -28,15 +25,6 @@
 
               # User owning the Homebrew prefix
               user = "jankleine";
-            };
-          }
-	  home-manager.darwinModules.home-manager
-	  {
-	    home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-
-            home-manager.users = {
-              jankleine = import ./home.nix;
             };
           }
         ];
