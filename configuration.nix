@@ -4,6 +4,13 @@
     pkgs.neovim
   ];
 
+  environment.etc = {
+    "zshenv".text = ''
+      # move zsh files to .config for all users
+      export ZDOTDIR="$HOME"/.config/zsh
+    '';
+  };
+
   fonts.packages = [
     pkgs.nerd-fonts.iosevka
   ];
