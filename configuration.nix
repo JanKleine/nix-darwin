@@ -52,6 +52,10 @@
     };
   };
 
+  # diable here because of conflict with home-manager
+  # needs to be enabled per user
+  programs.zsh.enableGlobalCompInit = false;
+
   users.users = {
     jankleine = {
       description = "Jan Kleine";
