@@ -57,6 +57,10 @@
       description = "Jan Kleine";
       home = "/Users/jankleine";
     };
+    ipt = {
+      description = "IPT";
+      home = "/Users/ipt";
+    };
   };
 
   # The platform the configuration will be used on.
