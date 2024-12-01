@@ -22,7 +22,7 @@
       "firefox"
       "iina"
       "iterm2"
-      "jetbrains-toolbox"
+      "intellij-idea"
       "nextcloud"
       "proton-mail"
       "protonvpn"
