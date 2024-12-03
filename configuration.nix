@@ -22,12 +22,13 @@
       "1password"
       "firefox"
       "iina"
-      "iterm2"
       "intellij-idea"
+      "iterm2"
       "nextcloud"
+      "plex"
+      "podman-desktop"
       "proton-mail"
       "protonvpn"
-      "plex"
       "signal"
     ];
   };
