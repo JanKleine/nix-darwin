@@ -18,6 +18,9 @@
   homebrew = {
     enable = true;
     onActivation.cleanup = "zap";
+    taps = [
+      "platformplane/tap"
+    ];
     brews = [
       "platformplane/tap/console"
     ];
