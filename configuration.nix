@@ -26,7 +26,6 @@
       "iterm2"
       "nextcloud"
       "plex"
-      "podman-desktop"
       "proton-mail"
       "protonvpn"
       "signal"
