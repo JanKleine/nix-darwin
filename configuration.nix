@@ -18,6 +18,9 @@
   homebrew = {
     enable = true;
     onActivation.cleanup = "zap";
+    brews = [
+      "platformplane/tap/console"
+    ];
     casks = [
       "1password"
       "firefox"
