@@ -34,6 +34,7 @@
       "plex"
       "proton-mail"
       "protonvpn"
+      "rustrover"
       "signal"
     ];
   };
