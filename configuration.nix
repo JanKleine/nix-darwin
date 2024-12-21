@@ -31,7 +31,6 @@
       "intellij-idea"
       "iterm2"
       "nextcloud"
-      "pgadmin4"
       "plex"
       "proton-mail"
       "protonvpn"
