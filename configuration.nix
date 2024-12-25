@@ -1,9 +1,5 @@
 { pkgs, config, ... }: {
 
-  environment.systemPackages = [
-    pkgs.neovim
-  ];
-
   environment.etc = {
     "zshenv".text = ''
       # move zsh files to .config for all users
