@@ -26,6 +26,7 @@
       "iina"
       "intellij-idea"
       "iterm2"
+      "openjdk@21"
       "minecraft"
       "nextcloud"
       "plex"
