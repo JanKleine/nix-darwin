@@ -26,7 +26,6 @@
       "iina"
       "intellij-idea"
       "iterm2"
-      "minecraft"
       "nextcloud"
       "plex"
       "proton-mail"
