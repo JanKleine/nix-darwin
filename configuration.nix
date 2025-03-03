@@ -23,6 +23,7 @@
     casks = [
       "1password"
       "firefox"
+      "google-chrome"
       "iina"
       "intellij-idea"
       "iterm2"
