@@ -22,6 +22,7 @@
     ];
     casks = [
       "1password"
+      "aldente"
       "firefox"
       "google-chrome"
       "iina"
