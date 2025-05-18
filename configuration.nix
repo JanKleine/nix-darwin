@@ -48,6 +48,8 @@
   # $ darwin-rebuild changelog
   system.stateVersion = 5;
 
+  system.primaryUser = "jankleine";
+
   system.defaults = {
     controlcenter.BatteryShowPercentage = true;
     finder.FXPreferredViewStyle = "Nlsv";
