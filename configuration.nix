@@ -28,6 +28,7 @@
       "iina"
       "intellij-idea"
       "iterm2"
+      "microsoft-teams"
       "nextcloud"
       "pgadmin4"
       "plex"
