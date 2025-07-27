@@ -30,6 +30,7 @@
       "iterm2"
       "microsoft-teams"
       "nextcloud"
+      "obsidian"
       "pgadmin4"
       "plex"
       "proton-mail"
