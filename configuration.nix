@@ -24,6 +24,7 @@
       "1password"
       "aldente"
       "firefox"
+      "adobe-dng-converter"
       "google-chrome"
       "iina"
       "intellij-idea"
