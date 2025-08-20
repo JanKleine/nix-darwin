@@ -22,9 +22,9 @@
     ];
     casks = [
       "1password"
+      "adobe-dng-converter"
       "aldente"
       "firefox"
-      "adobe-dng-converter"
       "google-chrome"
       "iina"
       "intellij-idea"
@@ -36,6 +36,7 @@
       "plex"
       "proton-mail"
       "protonvpn"
+      "publii"
       "rustrover"
       "signal"
     ];
