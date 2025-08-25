@@ -37,8 +37,10 @@
       "proton-mail"
       "protonvpn"
       "publii"
+      "pycharm"
       "rustrover"
       "signal"
+      "visual-studio-code"
     ];
   };
 
