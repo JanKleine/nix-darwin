@@ -25,6 +25,7 @@
       "adobe-dng-converter"
       "aldente"
       "firefox"
+      "ghostty"
       "google-chrome"
       "iina"
       "intellij-idea"
