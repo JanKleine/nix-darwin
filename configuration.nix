@@ -30,6 +30,7 @@
       "iina"
       "intellij-idea"
       "iterm2"
+      "josm"
       "microsoft-teams"
       "nextcloud"
       "obsidian"
