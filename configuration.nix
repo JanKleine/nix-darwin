@@ -32,6 +32,7 @@
       "iterm2"
       "josm"
       "microsoft-teams"
+      "minecraft"
       "nextcloud"
       "obsidian"
       "pgadmin4"
