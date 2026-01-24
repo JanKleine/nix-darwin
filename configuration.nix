@@ -7,6 +7,10 @@
     '';
   };
 
+  environment.systemPackages = with pkgs; [
+    file
+  ];
+
   fonts.packages = [
     pkgs.nerd-fonts.iosevka
   ];
@@ -18,7 +22,7 @@
       "platformplane/tap"
     ];
     brews = [
-      "platformplane/tap/console"
+      "libmagic"
     ];
     casks = [
       "1password"
