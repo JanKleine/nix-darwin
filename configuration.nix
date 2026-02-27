@@ -11,8 +11,9 @@
     file
   ];
 
-  fonts.packages = [
-    pkgs.nerd-fonts.iosevka
+  fonts.packages = with pkgs; [
+    nerd-fonts.iosevka
+    liberation_ttf
   ];
 
   homebrew = {
