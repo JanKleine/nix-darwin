@@ -48,6 +48,7 @@
       "pycharm"
       "rustrover"
       "signal"
+      "tailscale-app"
       "visual-studio-code"
     ];
   };
